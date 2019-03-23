@@ -14,7 +14,7 @@ namespace RepositioryLayer.InMemoryRepository
     {
         public ShipRepository(string dbName) : this(new BattleshipContext(OptionsBuilder.GetInMemoryOptions(dbName))) { }
 
-        private ShipRepository(BattleshipContext context) : base(context) { }
+        public ShipRepository(BattleshipContext context) : base(context) { }
 
         public void SaveShip(Ship ship)
         {
