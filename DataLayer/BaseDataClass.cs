@@ -9,7 +9,6 @@ namespace DataLayer
 {
     public class BaseDataClass
     {
-        [Key]
         public int Id { get; set; }
     }
 }

@@ -11,5 +11,6 @@ namespace RepositioryLayer.Interfaces
     {
         void SaveState(State state);
         void CreateInitData();
+        int GetNextState(int currentStateId);
     }
 }

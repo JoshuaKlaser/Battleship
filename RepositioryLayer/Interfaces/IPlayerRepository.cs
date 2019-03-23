@@ -10,5 +10,6 @@ namespace RepositioryLayer.Interfaces
     public interface IPlayerRepository
     {
         void SavePlayer(Player player);
+        int CreatePlayer(string name);
     }
 }
