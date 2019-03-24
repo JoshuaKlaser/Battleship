@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepositioryLayer
+namespace DataLayer
 {
-    public class Class1
+    public class BaseDataClass
     {
+        public int Id { get; set; }
     }
 }

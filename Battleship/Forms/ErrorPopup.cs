@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Battleship
+namespace Battleship.Forms
 {
-    public partial class Form1 : Form
+    public partial class ErrorPopup : Form
     {
-        public Form1()
+        public ErrorPopup()
         {
             InitializeComponent();
+        }
+
+        private void btn_ErrorPopupOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

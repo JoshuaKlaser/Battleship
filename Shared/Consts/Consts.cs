@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameLayer
+namespace Shared.Consts
 {
-    public class Class1
+    public static class Consts
     {
+        public const int IntParseFailureNumber = 0;
     }
 }
