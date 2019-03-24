@@ -14,6 +14,7 @@ namespace Battleship.Content
         public static Image Hit { get; private set; }
         public static Image MissedShot { get; private set; }
         public static Image CantPlace { get; private set; }
+        public static Image CanPlace { get; private set; }
         public static Image ShipPiece { get; private set; }
 
         public static void LoadImages()
@@ -22,6 +23,7 @@ namespace Battleship.Content
             Hit = Image.FromFile(FileHelper.GetExecutableFilePath("\\Content\\Hit.png"));
             MissedShot = Image.FromFile(FileHelper.GetExecutableFilePath("\\Content\\MissedShot.png"));
             CantPlace = Image.FromFile(FileHelper.GetExecutableFilePath("\\Content\\CantPlace.png"));
+            CanPlace = Image.FromFile(FileHelper.GetExecutableFilePath("\\Content\\CanPlace.png"));
             ShipPiece = Image.FromFile(FileHelper.GetExecutableFilePath("\\Content\\ShipPiece.png"));
         }
     }

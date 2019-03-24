@@ -12,5 +12,6 @@ namespace DataLayer
         public int PosX { get; set; }
         public int PosY { get; set; }
         public bool IsHit { get; set; }
+        public bool IsMissed { get; set; }
     }
 }

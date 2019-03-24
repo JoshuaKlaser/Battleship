@@ -32,6 +32,8 @@ namespace RepositioryLayer.InMemoryRepository
 
             var player = _dbContext.Players.Add(newPlayer);
 
+            _dbContext.SaveChanges();
+
             return player.Entity.Id;
         }
     }

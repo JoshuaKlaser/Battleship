@@ -9,6 +9,9 @@ namespace DataLayer
 {
     public class Ship : BaseDataClass
     {
+        public int PlayerId { get; set; }
         public Player Player { get; set; }
+
+        public ICollection<ShipPiece> ShipPieces { get; set; }
     }
 }

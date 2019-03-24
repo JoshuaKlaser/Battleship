@@ -21,5 +21,15 @@ namespace RepositioryLayer.InMemoryRepository
             _dbContext.Ships.Add(ship);
             _dbContext.SaveChanges();
         }
+
+        public IEnumerable<Ship> GetShips(int playerId)
+        {
+            return _dbContext.Ships.Where(s => s.PlayerId == playerId);
+        }
+
+        public void UpdateShip(Ship ship)
+        {
+            _dbContext.Ships.Update(ship);
+        }
     }
 }

@@ -21,5 +21,13 @@ namespace RepositioryLayer.InMemoryRepository
             _dbContext.ShipPieces.Add(piece);
             _dbContext.SaveChanges();
         }
+
+        public void SaveShipPieces(IEnumerable<ShipPiece> pieces)
+        {
+            foreach (var piece in pieces)
+                _dbContext.ShipPieces.Add(piece);
+
+            _dbContext.SaveChanges();
+        }
     }
 }
